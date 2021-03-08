@@ -4,23 +4,27 @@ using System.Threading.Tasks;
 
 namespace ThreadSample
 {
+    public delegate int Transfromer(int num);
     class Program
     {
+        static int Square(int x)=> x * x;
         static async Task Main(string[] args)
         {
             //ThreadTest.MainThread();
             //JoinTest.MainThread();
             //JoinTest.SleepTest();
 
-            await TaskTest.TaskAwaitTest();
-            Console.WriteLine("thread id...{0}", Thread.CurrentThread.ManagedThreadId);
+            //await TaskTest.TaskAwaitTest();
 
             //Console.WriteLine("啦啦啦");
             //TaskTest.TaskRunTest();
 
             // TaskExceptionTest.MainTest();
 
+            DelegateTest.Demo();
 
+           // Transfromer t = Square;
+           // Console.WriteLine(t(5));
 
             //Func<int, Task<int>> func = async x => {
             //    Console.WriteLine("Starting...x={0}", x);
