@@ -21,10 +21,10 @@ namespace ThreadSample
 
             // TaskExceptionTest.MainTest();
 
-            DelegateTest.Demo();
-
-           // Transfromer t = Square;
-           // Console.WriteLine(t(5));
+            // DelegateTest.Demo();
+            // EventHandlerTest.Main();
+            // Transfromer t = Square;
+            // Console.WriteLine(t(5));
 
             //Func<int, Task<int>> func = async x => {
             //    Console.WriteLine("Starting...x={0}", x);
@@ -42,6 +42,9 @@ namespace ThreadSample
             //Console.WriteLine("First result: {0}", first.Result);
             //Console.WriteLine("Second result: {0}", second.Result);
             //Console.WriteLine("thread id...{0}", Thread.CurrentThread.ManagedThreadId);
+
+
+            TaskCompletionSourceTest.Main();
 
             Console.ReadLine();
         }

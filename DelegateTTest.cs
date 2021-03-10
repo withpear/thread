@@ -16,21 +16,21 @@ namespace ThreadSample
             }
         }
     }
-    public static class DelegateTTest
-    {
-        public static void Main()
-        {
-            var values = new int[] { 1, 2, 3 };
-            Util.Tranform(values, Square);
-            foreach (var item in values)
-            {
-                Console.WriteLine(item);
-            }
-        }
+    //public static class DelegateTTest
+    //{
+    //    public static void Main()
+    //    {
+    //        var values = new int[] { 1, 2, 3 };
+    //        Util.Tranform(values, Square);
+    //        foreach (var item in values)
+    //        {
+    //            Console.WriteLine(item);
+    //        }
+    //    }
 
-        public static int Square(int n)
-        {
-            return n * n;
-        }
-    }
+    //    public static int Square(int n)
+    //    {
+    //        return n * n;
+    //    }
+    //}
 }
